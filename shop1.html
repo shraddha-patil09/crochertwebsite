@@ -20,7 +20,6 @@
       line-height: 1.6;
     }
 
-    
     .top-header {
       background-color: #e6d6f3;
       text-align: center;
@@ -58,7 +57,6 @@
       color: #6d4c91;
     }
 
-    /* Main layout after header */
     .main-container {
       display: flex;
       flex: 1;
@@ -179,61 +177,54 @@
 </head>
 <body>
 
- 
   <div class="top-header">
     <h1>Crochetopia</h1>
     <p>"From My Hands to Your Heart."</p>
     <nav>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="shop1.html">Shop</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </nav>
-      
+      <a href="index.html">Home</a>
+      <a href="shop1.html">Shop</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
     </nav>
   </div>
 
   <div class="main-container">
-   
     <div class="sidebar">
       <h2>Categories</h2>
       <ul>
         <li><a onclick="showCategory('single-flowers')">Single Flowers</a></li>
         <li><a onclick="showCategory('bouquet')">Bouquets</a></li>
         <li><a onclick="showCategory('keychains')">Key Chains</a></li>
-        <li><a onclick="showCategory('phone-charms')">Phone Charms</a></li>
-        <li><a onclick="showCategory('hair-accessories')">Hair Accessories</a></li>
+        <li><a onclick="showCategory('pouch')">Pouch</a></li>
       </ul>
     </div>
 
-    
     <div class="main-content">
-      
-        <div class="category-section" id="single-flowers">
-          <h2>Single Flowers</h2>
-          <div class="products">
-            <div class="product">
-              <img src="rose.html.jpeg" alt="Roseflower">
-              <h4>Roseflower</h4>
-              <p>₹120</p>
-              <button onclick="addToCart('Roseflower', 120)">Add to Cart</button>
-            </div>
-            <div class="product">
-              <img src="sunflower.html.jpeg" alt="Sunflower">
-              <h4>Sunflower</h4>
-              <p>₹150</p>
-              <button onclick="addToCart('Sunflower', 120)">Add to Cart</button>
-            </div>
-            <div class="product">
-              <img src="daisy.html.jpeg" alt="Daisyflower">
-              <h4>Daisyflower</h4>
-              <p>₹100</p>
-              <button onclick="addToCart('Daisyflower', 120)">Add to Cart</button>
-            </div>
-           
+
+     
+      <div class="category-section" id="single-flowers">
+        <h2>Single Flowers</h2>
+        <div class="products">
+          <div class="product">
+            <img src="rose.html.jpeg" alt="Roseflower">
+            <h4>Roseflower</h4>
+            <p>₹120</p>
+            <button onclick="addToCart('Roseflower', 120)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="sunflower.html.jpeg" alt="Sunflower">
+            <h4>Sunflower</h4>
+            <p>₹150</p>
+            <button onclick="addToCart('Sunflower', 150)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="daisy.html.jpeg" alt="Daisyflower">
+            <h4>Daisyflower</h4>
+            <p>₹100</p>
+            <button onclick="addToCart('Daisyflower', 100)">Add to Cart</button>
           </div>
         </div>
+      </div>
 
       <div class="category-section" id="bouquet">
         <h2>Bouquets</h2>
@@ -247,43 +238,50 @@
         </div>
       </div>
 
+     
       <div class="category-section" id="keychains">
         <h2>Key Chains</h2>
         <div class="products">
           <div class="product">
-            <img src="https://via.placeholder.com/200?text=Key+Chain" alt="Key Chain">
-            <h4>Daisy Keychain</h4>
-            <p>₹90</p>
-            <button onclick="addToCart('Daisy Keychain', 90)">Add to Cart</button>
+            <img src="bouquetkeychain.html.jpg" alt="bouquet keychain">
+            <h4>Tulip Flower Coaster Bouquet Keychain</h4>
+            <p>₹120</p>
+            <button onclick="addToCart('Bouquet Keychain', 120)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="coaster.html.jpg" alt="bouquet keychain">
+            <h4>Tulip Flower Coaster Bouquet Keychain</h4>
+            <p>₹120</p>
+            <button onclick="addToCart('Bouquet Keychain', 120)">Add to Cart</button>
           </div>
         </div>
       </div>
 
-      <div class="category-section" id="phone-charms">
-        <h2>Phone Charms</h2>
+      
+      <div class="category-section" id="pouch">
+        <h2>Pouch</h2>
         <div class="products">
           <div class="product">
-            <img src="https://via.placeholder.com/200?text=Phone+Charm" alt="Phone Charm">
-            <h4>Butterfly Charm</h4>
+            <img src="frogpouch.html.jpg" alt="frog pouch">
+            <h4>Frog Pouch</h4>
             <p>₹110</p>
-            <button onclick="addToCart('Butterfly Charm', 110)">Add to Cart</button>
+            <button onclick="addToCart('Frog Pouch', 110)">Add to Cart</button>
           </div>
-        </div>
-      </div>
-
-      <div class="category-section" id="hair-accessories">
-        <h2>Hair Accessories</h2>
-        <div class="products">
           <div class="product">
-            <img src="https://via.placeholder.com/200?text=Hair+Clip" alt="Hair Clip">
-            <h4>Flower Hair Clip</h4>
-            <p>₹70</p>
-            <button onclick="addToCart('Flower Hair Clip', 70)">Add to Cart</button>
+            <img src="flowerpouch.html.jpg" alt="flower pouch">
+            <h4>Flower Pouch</h4>
+            <p>₹110</p>
+            <button onclick="addToCart('Flower Pouch', 110)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="bearpouch.html.jpg" alt="bear pouch">
+            <h4>Bear Pouch</h4>
+            <p>₹110</p>
+            <button onclick="addToCart('Bear Pouch', 110)">Add to Cart</button>
           </div>
         </div>
       </div>
 
-     
       <div class="cart">
         <h3>Your Cart</h3>
         <ul id="cart-items"></ul>
@@ -295,35 +293,36 @@
           <li><strong>Instagram DM:</strong> @Crochetopia</li>
           <li><strong>WhatsApp:</strong> 7208797494</li>
         </ul>
-       
       </div>
     </div>
-  </div>  
+  </div>
 
-  
   <script>
-  const cart = [];
+    const cart = [];
 
-  function showCategory(categoryId) {
-    document.querySelectorAll('.category-section').forEach(section => section.classList.remove('active'));
-    document.getElementById(categoryId).classList.add('active');
-  }
+    function showCategory(categoryId) {
+      document.querySelectorAll('.category-section').forEach(section => section.classList.remove('active'));
+      document.getElementById(categoryId).classList.add('active');
+    }
 
-  function addToCart(name, price) {
-    cart.push({ name, price });
-    updateCart();
-  }
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      updateCart();
+    }
 
-  function updateCart() {
-    const cartList = document.getElementById('cart-items');
-    let total = 0;
-    cartList.innerHTML = cart.map(item => {
-      total += item.price;
-      return `<li>${item.name} - ₹${item.price}</li>`;
-    }).join('');
-    document.getElementById('cart-total').textContent = total;
-  }
-</script>
+    function updateCart() {
+      const cartList = document.getElementById('cart-items');
+      let total = 0;
+      cartList.innerHTML = cart.map(item => {
+        total += item.price;
+        return `<li>${item.name} - ₹${item.price}</li>`;
+      }).join('');
+      document.getElementById('cart-total').textContent = total;
+    }
+
+    
+    window.onload = () => showCategory('single-flowers');
+  </script>
 
 </body>
 </html>
